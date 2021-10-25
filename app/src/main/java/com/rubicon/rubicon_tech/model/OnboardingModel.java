@@ -4,7 +4,7 @@ public class OnboardingModel {
 	
 	String description ;
 	int image;
-	
+	//
 	public OnboardingModel(String description, int image) {
 		this.description = description;
 		this.image = image;
