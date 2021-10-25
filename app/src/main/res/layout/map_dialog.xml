@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:id="@+id/menu_mail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="info@rubicon-tech.co.uk"
+        android:gravity="start|center"
+        android:background="@drawable/round_border"
+        android:textColor="#03ae3c"
+        android:paddingHorizontal="10dp"
+        android:drawableStart="@drawable/ic_baseline_mail_24"
+        android:drawablePadding="8dp"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintDimensionRatio="H,10:1"
+        />
+
+    <TextView
+        android:id="@+id/menu_phone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableStart="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="8dp"
+        android:gravity="start|center"
+        android:layout_marginVertical="10dp"
+        android:paddingHorizontal="10dp"
+
+        android:text="+44 (0)2037690706"
+        android:background="@drawable/round_border"
+        android:textColor="#03ae3c"
+        app:layout_constraintDimensionRatio="H,10:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_mail"
+        />
+
+    <TextView
+        android:id="@+id/menu_loc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableStart="@drawable/loc"
+        android:layout_marginVertical="10dp"
+        android:drawablePadding="8dp"
+        android:gravity="start|center"
+        android:paddingHorizontal="10dp"
+
+        android:textColor="#03ae3c"
+        android:text=""
+        android:background="@drawable/round_border"
+        app:layout_constraintDimensionRatio="H,10:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_phone"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
